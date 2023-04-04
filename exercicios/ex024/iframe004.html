@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptas aliquam! Odit odio ad velit nihil ab ipsa iure soluta voluptatem ratione fugiat! Odio minima dolorum animi dicta assumenda sed?</p>
+
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso
+    </iframe>
+    <!--
+    Sandbox = "sandbox" -> bloqueia todos os acessos que outros sites dentro do iframe tentam fazer
+
+    Sandbox = "allow-same-origin" -> permite o conteudo de mesma origem (página q eu fiz)
+    
+    referrerpolicy="no-referrer" ->O conteúdo dentro do iframe não vai coletar nenhum dado do usuário
+    -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet eos voluptatibus saepe maxime fugiat? Vitae, saepe. Labore amet illum dignissimos beatae sint, voluptatibus veniam quo magni nobis expedita eveniet sed.</p>
+</body>
+</html>
