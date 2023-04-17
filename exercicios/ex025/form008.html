@@ -11,12 +11,15 @@
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="in1">Número1</label>
-            <input type="number" name="n1" id="in1" min="0" max="50" required>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!--oniput -> quando a pessoa entrar com dados
+            oniput só funcional pois existia o output (não envia, só mostra)-->
         </p>
 
         <p>
             <label for="in2">Número2</label>
-            <input type="number" name="n2" id="in2" min="0" max="50" required>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!--teve que colocar o oniput não dois input para a soma dar certo-->
         </p>
         <p>
             <label for="isoma">Soma:</label>
